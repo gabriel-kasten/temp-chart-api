@@ -1,0 +1,46 @@
+    body {
+    margin: 0px;
+    padding: 0px;
+
+    /* background-color: #0f172a; */
+
+    overflow-x: hidden;
+}
+
+header {
+    padding: 2rem 4rem;
+    border-bottom: 1px solid white;
+}
+
+main {
+    padding: 2rem 4rem;
+}
+
+.filters-container {
+    margin-bottom: 2rem;
+}
+
+.filters-container input[type=date] {
+    padding: 0.5rem;
+    
+    font-size: 1rem;
+    color: white;
+
+    background-color: transparent;
+
+    outline: none;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+.chart-container {
+    /* background-color: red; */
+    height: 80vh;
+    width: 100%;
+}
+
+#temp_chart {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}

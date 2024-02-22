@@ -6,6 +6,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/temp-chart-go/database"
+
+	cors "github.com/rs/cors/wrapper/gin"
 )
 
 func main() {
@@ -15,6 +17,8 @@ func main() {
 	}
 
 	app := gin.Default()
+	app.Use(cors.Default())
+
 	app.GET("/temperature-data", func(ctx *gin.Context) {
 
 		results, err := database.QueryTemperatureData(db)
@@ -23,7 +27,6 @@ func main() {
 			return
 		}
 		ctx.JSON(http.StatusOK, results)
-
 	})
 	app.Run(":6969")
 }

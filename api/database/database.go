@@ -25,7 +25,7 @@ func DatabaseCon() (*sql.DB, error) {
 func QueryTemperatureData(db *sql.DB) ([]Result, error) {
 	var results []Result
 
-	rows, err := db.Query("SELECT id, date_measured, temperature FROM TEMPERATURE_DATA")
+	rows, err := db.Query("SELECT id, date_measured, temperature FROM temperature_data")
 	if err != nil {
 		return nil, err
 	}
