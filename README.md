@@ -7,10 +7,9 @@ The goal for this project is been able to retrieve data from an SQLite database 
 - [x] Insert the data into the database
 - [x] Setup the API that will handle the frontend requests
 - [x] Retrieve the data from the database
-- [ ] A simple frontend with a chart and some boilerplate data to start
-- [ ] Populate the chart with the data retrieved from the '/data' route
-- [ ] Refresh the chart in a 5 minutes interval to fetch for updates in the database
-- [ ] Add a button for a manual reload
+- [x] A simple frontend with a chart and some boilerplate data to start
+- [x] Populate the chart with the data retrieved from the '/data' route
+- [x] Refresh the chart in a 10 seconds interval to fetch for updates in the database
 
 ## Libs used:
 - chart.js
